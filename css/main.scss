@@ -1,0 +1,71 @@
+// colores lovb
+$blanco: #fbfbfb;
+$verde: #3cfe3e;
+$azul: #0091FF;
+$naranja: #fd6100;
+$negro: #001221;
+
+html{height: 100vh;}
+
+body{
+    background-image: url("../images/crossword.png");
+    background-size: contain;
+}
+
+.dch, .izq{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.dch{
+    img{margin-top: 20vh;}
+    .btn {
+        margin-top: 20px;
+        background-color: $azul;
+        box-shadow: 0 5px 15px 3px rgba($negro, .3);}
+}
+
+//contacto
+
+.contacto{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    right: 20px;
+    height: auto;
+    padding: 60px 20px 20px 20px;
+    background-image: url("../images/fondocontacto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 25px 35px 1px rgba($negro, .3);
+    p{
+        font-family: 'Architects Daughter', cursive;
+        font-size: 1.6em;
+        padding-left: 2em;}
+    span{ color: $azul;}
+    img{
+        display: block;
+        width: 50%;
+        margin: auto;}
+}
+@media (max-width: 1350px) {
+    .izq > img {
+        border-radius: 50%;}
+}
+
+@media (max-width: 768px) {
+    .izq {
+        display: none;}
+    .contacto {
+        position: relative;
+        left: 0;
+        margin:0 5px;
+        p {
+            font-size: 1.2em;}
+    }
+    .boton{
+        display: none;}
+    .dch{
+        height: auto;}
+}
