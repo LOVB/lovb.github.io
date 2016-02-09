@@ -1,4 +1,7 @@
 $(function(){
+
+    $(".contacto").hide();
+
     $(window).resize(function(){
         if ($(window).width() <= 768){
             $(".contacto").show();
@@ -7,9 +10,9 @@ $(function(){
         }
     });
 
-    $(".contacto").hide();
     $(".boton").click(function(){
         $('.contacto').fadeToggle();
     });
 
+    return false;
 });
