@@ -13,6 +13,4 @@ $(function(){
     $(".boton").click(function(){
         $('.contacto').fadeToggle();
     });
-
-    return false;
 });

@@ -49,14 +49,13 @@ body {
 
   .contacto {
     position: relative;
-    height: 100%;
     left: 0;
     margin: 0 5px; }
     .contacto p {
       font-size: 1.2em; }
 
   .dch {
-    height: 100%; }
+    overflow: inherit; }
     .dch img {
       margin-top: 5px; } }
 
